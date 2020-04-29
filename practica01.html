@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practica01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <style>
+            body {
+                background-color: brown;
+            } 
+            button{
+                width: 200px; height: 200px;
+                font-size: medium;
+            }
+        </style>
+    </head>   
+    <body id="demo">
+        <h1><v><u>PRACTICA 01</u></v></h1>
+            <button onclick="cambiarTamañoLetra()">cambiar tamaño </button>
+            <button onclick="cambiarColorLetra()">cambiar color </button>
+            <script>
+                var palabra = "esta es una página de dios";
+                    function cambiarColorLetra() {
+                      palabra = <div style ="color:blue;">esta es una página de dios</div>
+
+                    }
+                    function cambiarTamañoLetra() {
+                        palabra = <div style ="font-size:30px;">esta es una página de dios</div>
+
+                    }
+            </script>
+     </body>
+</html>
