@@ -6,30 +6,29 @@
         <meta name="viewport" content="initial-scale=1.0">
         <style>
             body {
-                background-color: brown;
+                background-color: rgb(49, 100, 80);
+                text-align: center;
             } 
             button{
-                color: "orange";
-                width: 100px; height: 100px;
+                text-align: center;
+                background-color:rgb(204, 188, 44);
+                width: 150px; height: 150px;
                 font-size: 20px;
             }
         </style>
     </head>   
-    <body id="demo">
+    <body >
         <h1><v><u>PRACTICA 01</u></v></h1>
-            <button onclick="cambiarTamañoLetra()">cambiar tamaño </button>
-            <button onclick="cambiarColorLetra()">cambiar color </button>
+            <button id ="demo" onclick="cambiarTamañoLetra()">cambiar tamaño </button> <br/>
+            <button id = "demo1" onclick="cambiarColorLetra()">cambiar color </button>
             <script>
-                var palabra = "esta es una página de dios";
                     function cambiarColorLetra() {
-                      palabra = <div style ="color:blue;">esta es una página de dios</div>
-
+                        document.getElementById('demo1').style.backgroundColor="blue" ;
                     }
                     function cambiarTamañoLetra() {
-                        palabra = <div style ="font-size:30px;">esta es una página de dios</div>
+                        document.getElementById('demo').style.fontSize= "30px";
 
                     }
             </script>
-            <p id="demo"></p>
      </body>
 </html>
