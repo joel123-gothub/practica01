@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practica02</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <style>
+            body {
+                background-color: rgb(29, 95, 156);
+                text-align: center;
+                font-size: 20px;
+            } 
+            button{
+                text-align: center;
+                background-color:rgb(125, 103, 160);
+                width: 120px; height: 120px;
+                font-size: 15px;
+            }
+        </style>
+    </head>   
+    <body >
+        <h1><v><u>PRACTICA 02</u></v></h1>
+        <p>haga clic en realizar operación!! para realizar operación</p>
+        <button onclick="myFunction()">realizar operación!!</button>
+        <p>los operadores pueden ser: "+", "-", "/" y "x"</p>
+        <p id="demo"></p>
+        <script> 
+            function myFunction() { 
+                    var x;
+                    var y;
+                    var z;
+                    var r;
+                    x=prompt('Ingrese numero 1:',);
+                    y=prompt('Ingrese numero 2:',);
+                    operador=prompt('Ingrese operador:','');
+                    document.getElementById("demo").innerHTML ='el resultado es: '+ operacion(x, y, operador); 
+                    function operacion(x, y, operador) {
+                        var x1 = parseFloat(x);
+                        var y1 = parseFloat(y);
+                         if(operador=='+'){return (x1 + y1);}
+                         else if(operador=='-'){return (x1-y1);}
+                         else if(operador=='x'){return (x1*y1);}
+                         else if(operador=='/'){return (x1/y1);}
+                         else{return "error: operador erroneo!!!"}
+            }  
+             }
+        </script>
+    </body>
+</html>
